@@ -72,9 +72,16 @@ Tested on: Ubuntu 19.10 / Apache2 / PHP 7.3
   
 * In VS Code:
 
-    * Rename `.env.example` to `.env`, then edit `.env` to specify your CUCM host name/IP and API user credentials
+    * Install the 'PHP Extension Pack' extension (felixfbecker.php-pack)
 
-    * To run a specific sample, open the sample `.php` file you want to run, then press `F5`; or open the Debugging panel, make sure 'Launch currently open script' is selected in the drop-down, then click the green 'Launch' arrow
+    * Copy `.env.example` to `.env`, then edit `.env` to specify your CUCM host name/IP and API user credentials
+
+    * To run a specific sample, copy the `.php` file, `.env` file and contents of `schema/` and `vendor/` to your PHP CGI root, e.g. for Apache2 on Ubuntu 19.10: 
+
+        ```shell
+        sudo cp -r {*.php,.env,vendor/,schema/} /var/www/html/
+        ```
+        Then open the URL in your browser, e.g.: http://localhost/selectCmDevice_wildcard.php
 
 ## Hints
 
