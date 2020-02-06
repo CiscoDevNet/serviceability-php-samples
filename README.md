@@ -4,6 +4,8 @@
 
 A set of small sample scripts demonstrating how to use the CUCM Serviceability APIs to retrieve real-time device registration, IP address and other details.  The samples output HTML using PHP and the SoapClient and DOMDocument libraries.
 
+![screenshot](assets/images/screenshot.png)
+
 [https://developer.cisco.com/site/sxml/](https://developer.cisco.com/site/sxml/)
 
 
